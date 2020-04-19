@@ -11,17 +11,16 @@ function delLetter(lett){
 
 function performanceName(){
     var k = document.getElementById("nameChange").innerHTML;
-    if(k == " "){
-        k = "";
-    }
     var finalLet1 = "";
     
-    if (workToDo == "delName"){
+    if (workToDo == "delName" || workToDo == "delDev"){
         finalLet1 = delLetter(k);
-    }
-
-    if(finalLet1 == ""){
-        finalLet1 = " ";
+    }else if(workToDo == "addName"){
+        var letters = "Sushan Sapaliga";
+        finalLet1 = k + letters[k.length];
+    }else if( workToDo == "addDev"){
+        var letters = "A Developer";
+        finalLet1 = k + letters[k.length];
     }
     document.getElementById("nameChange").innerHTML = finalLet1;
 }
@@ -41,7 +40,7 @@ function changeMyName(){
 }
 
 function onceLoaded(){
-    setInterval(function(){ changeMyName() }, 300);
+    setInterval(function(){ changeMyName() }, 150);
 }
 
 onceLoaded();
