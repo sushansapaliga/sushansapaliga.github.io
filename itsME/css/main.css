@@ -16,3 +16,9 @@
     color: #ffffff;
 }
 
+@media screen and (max-width: 400px){
+    .intro{
+        padding-top: 80%;
+        color: #ffffff;
+    }
+}
