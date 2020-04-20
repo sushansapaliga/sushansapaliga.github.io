@@ -44,7 +44,7 @@ a{
 }
 
 .pro:hover{
-    background-color: rgb(240, 234, 234);
+    background-color: rgb(245, 237, 245);
     margin-top: -1%;
     margin-bottom: 5%;
 }
@@ -53,9 +53,16 @@ a{
     text-align: justify;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .intro{
         padding-top: 80%;
         color: #ffffff;
+    }
+    .name{
+        font-size: 240%;
+        font-weight: bold;
+    }
+    .location{
+        font-size: 100%;
     }
 }
