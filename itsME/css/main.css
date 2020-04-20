@@ -12,7 +12,7 @@ a{
 
 .name{
     font-size: 350%;
-    font-weight: bold;
+    font-weight: bolder ;
     transition: 0.5s;
 }
 
@@ -53,9 +53,40 @@ a{
     text-align: justify;
 }
 
+.contactHead{
+    font-size: 200%;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.footer{
+    background-color:#ffffff; 
+    color: #000000;
+    padding: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.footer:hover{
+    margin-top: 0%;
+    font-size: 105%;
+    color: #e03939;
+}
+
+.footerLink:hover{
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;
+}
+
 @media screen and (max-width: 500px){
     .intro{
-        padding-top: 80%;
+        padding-top: 90%;
         color: #ffffff;
     }
     .name{
@@ -66,3 +97,5 @@ a{
         font-size: 100%;
     }
 }
+
+
