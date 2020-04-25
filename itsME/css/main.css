@@ -38,15 +38,15 @@ a{
     transition: 0.5s;
 }
 
-.projectTitle{
-    font-size: 200%;
-    font-weight: bold;
-}
-
 .pro:hover{
     background-color: rgb(245, 237, 245);
     margin-top: -1%;
     margin-bottom: 5%;
+}
+
+.projectTitle{
+    font-size: 200%;
+    font-weight: bold;
 }
 
 .projectDesp{
