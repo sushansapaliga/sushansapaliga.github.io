@@ -2,12 +2,45 @@
     font-size: 210%;
 }
 
-a{
+.pro a, .footerLink{
     color: brown;
 }
 
 .location{
     font-size: 130%;
+}
+
+.icon-sec1{
+    font-size: 180%;
+}
+
+.icon-sec1 a{
+    text-decoration: none;
+    color: white;
+    transition: 200ms ;
+}
+
+.icon-sec1 a:hover .github{
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.icon-sec1 a:hover .instagram{
+    text-decoration: none;
+    color: rgb(198, 58, 98);
+    transition: 200ms;
+}
+
+.icon-sec1 a:hover .linkedin{
+    text-decoration: none;
+    color: rgb(0, 123, 182);
+    transition: 200ms;
+}
+
+.icon-sec1 a:hover .hackerrank{
+    text-decoration: none;
+    color: rgb(39, 180, 89);
+    transition: 200ms;
 }
 
 .name{
