@@ -1,4 +1,4 @@
-.input{
+.inputCustom{
     color: white;
     background-color: transparent;
     border-width: 0px 0px 0px 10px;
@@ -9,7 +9,7 @@
     
 }
 
-input:focus{
+.inputCustom:focus{
     opacity: 1;
     outline: none;
     animation-name: inputEffects;

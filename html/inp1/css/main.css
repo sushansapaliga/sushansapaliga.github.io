@@ -45,7 +45,7 @@ body, html{
         font-weight: 1000;
     }
 
-    .input{
+    .inputCustom{
         font-size: 200%;
     }
 }
@@ -58,7 +58,7 @@ body, html{
         font-weight: 1000;
     }
 
-    .input{
+    .inputCustom{
         font-size: 110%;
     }
 }
