@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>JavaScript</title>
+
+    <link rel = "icon" href = "img/js1.svg" type = "image/x-icon"> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <div class="background">
+        <!-- heading -->
+        <div class="heading">
+            JavaScript 
+        </div>
+        <div class="container">
+            <hr>
+            <div class="type1">
+                <h3 style="padding-bottom: 10px;">Type 1:</h3>
+                <div class="doc">
+                    For Documentation <a href="https://github.com/sushansapaliga/HTML-WithMyEffects/tree/master/js/type1">Here</a>
+                </div>
+
+                <div style="text-align: center;font-size: 150%;padding: 30px;">
+                    JavaScript is <span style="font-weight: bold;" id="changeText">Magic</span>
+                </div>
+                <h6>Try custom input:</h6>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder="Input 1" id="input1" value="Magic">
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder="Input 2" id="input2" value="Fun">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-dark btn-block" id="makeTheChange">Try Custom Input</button>
+                    </div>
+                </div>
+
+                <!-- Begin: script place for type-1 -->
+                <script>
+                    var inpData = [ "Magic" , "Fun"];
+                </script>
+                <script src="js/textChangingJS.js"></script>
+                <script>
+            
+                    function changeTheData(){
+                        clearInterval(textChangingTimerController);
+                        inpData[0] = document.getElementById("input1").value.trim() ;
+                        inpData[1] = document.getElementById("input2").value.trim() ;
+                        document.getElementById("changeText").innerHTML = inpData[0];
+                        workToDo = "addInp1";
+                        onceLoaded();
+                    }
+            
+                    document.getElementById("makeTheChange").addEventListener("click",changeTheData);
+                </script>
+                <!-- End: script place for type-1 -->
+            </div>
+            <hr>
+            <div class="type2">
+
+                <!-- beginning: style for type2 -->
+                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+                <!-- end: style for type2 -->
+
+                <h3 style="padding-bottom: 10px;">Type 2:</h3>
+                <div class="doc">
+                    For Documentation <a href="https://github.com/sushansapaliga/HTML-WithMyEffects/tree/master/js/type2">Here</a>
+                </div>
+                <div style="text-align: center;font-size: 150%;padding: 30px;">
+                    BE THE 
+                    <div style="font-size: 170%;font-weight: 1000;" id="t2Text">
+                        <i>CHANGE</i>
+                    </div>
+                </div>
+
+                <!-- beginning: script for type2 -->
+                <script>
+                    var t2FontStyle = ["Dancing Script","Lobster","Pacifico","Permanent Marker","Press Start 2P"];
+                </script>
+                <script src="js/type2js.js"></script>
+                <!-- end: script for type2 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Designed and Developed with ❤ by <a href="https://sushansapaliga.github.io" target="_blank">Me</a>
+    </div> 
+
+
+</body>
+</html>
