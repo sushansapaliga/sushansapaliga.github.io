@@ -22,6 +22,7 @@
 
 .icon-sec1 a:hover .github{
     text-decoration: none;
+    color: rgb(177, 0, 177);
     transition: 200ms;
 }
 
