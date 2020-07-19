@@ -44,6 +44,12 @@
     transition: 200ms;
 }
 
+.icon-sec1 a:hover .stackoverflow{
+    text-decoration: none;
+    color: rgb(244, 128, 36);
+    transition: 200ms;
+}
+
 .name{
     font-size: 350%;
     font-weight: bolder ;
@@ -116,6 +122,21 @@
     color:#00A0C6; 
     text-decoration:none; 
     cursor:pointer;
+}
+
+/* .name::after{
+    content: '_';
+    font-weight: normal;
+    animation: animateName 750ms infinite linear;
+} */
+
+@keyframes animateName{
+    0%, 50%, 75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
