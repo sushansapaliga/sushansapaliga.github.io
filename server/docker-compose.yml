@@ -1,0 +1,8 @@
+services:
+  server:
+    container_name: portfolio
+    image: github.com/sushansapaliga.github.io/server:0.1.0
+    ports:
+      - "9000:8080"
+      # HOST-PORT:CONTAINER-PORT
+    restart: unless-stopped

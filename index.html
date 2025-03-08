@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="section1">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,163 +8,172 @@
     <meta name="description" content="This is online portfolio of Sushan Sapaliga"> 
     <meta name="theme-color" content="#3C3C3C">
     <meta name="msapplication-TileColor" content="#ffffff">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-    <link rel = "icon" href = "itsME/images/!.png" type = "image/x-icon"> 
+    <link rel = "icon" href = "images/!.png" type = "image/x-icon"> 
     
     <title>Sushan Sapaliga</title>
     <meta name="google-site-verification" content="9O-VgDakH50Q6R8ueQDQLgJI4xGDTeOCpULuasNc-4o" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="itsME/css/sectionBackground.css">
-    <link rel="stylesheet" href="itsME/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168272963-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-168272963-1');
+        gtag('config', 'UA-168272963-1');
     </script>
 </head>
-
-<style>
-
-</style>
-<body>
-    <!-- introduction -->
-    <div class="section1" >
-        <div class="container">
-            <div class="intro">
-                <div class="hiIAM"> Hey, I am </div>
-                <div class="name" id="nameChange">Sushan Sapaliga</div>
-                <br>
-                <div class="location"><i class="fas fa-map-marker-alt"></i> Vamanjoor, Mangalore</div>
-                <div class="location"><i class="fas fa-university"></i> St Joseph Engineering College</div> <br>
-                <div class="icon-sec1">
-                    <a href="https://github.com/sushansapaliga" target="_blank">
-                        <span class="github">
-                            <i class="fab fa-github"></i>
-                        </span>
-                    </a> 
-                    &nbsp;
-                    <a href="https://www.instagram.com/sushan_sapaliga/?hl=en" target="_blank">
-                        <span class="instagram">
-                            <i class="fab fa-instagram"></i>
-                        </span>
-                    </a>  
-                    &nbsp;
-                    <a href="https://www.linkedin.com/in/sushansapaliga/" target="_blank">
-                        <span class="linkedin">
-                            <i class="fab fa-linkedin"></i> 
-                        </span> 
-                    </a>
-                    &nbsp;
-                    <a href="https://www.hackerrank.com/sushansapaliga" target="_blank">
-                        <span class="hackerrank">
-                            <i class="fab fa-hackerrank"></i> 
-                        </span> 
-                    </a>
-                    &nbsp;
-                    <a href="https://stackoverflow.com/users/11406735/sushan-sapaliga" target="_blank">
-                        <span class="stackoverflow">
-                            <i class="fab fa-stack-overflow"></i>
-                        </span> 
-                    </a>
-                </div>
-            </div>
-
+<body >
+    <!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">SushanSapaliga.</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-light">
+                <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="mailto:sushansapaliga@gmail.com" uk-scroll>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation Bar Ends  -->
+    
+    <!-- Navigation Bar Mobile -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">SushanSapaliga.</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-light">
+                <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Change This -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+                <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+                <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+                <li class="uk-active"><a href="mailto:sushansapaliga@gmail.com">Contact</a></li>
+            </ul>
         </div>
     </div>
-    <!-- project -->
-    <div class="section2" >
-        <div class="container">
-            <div class="projectHead">Projects</div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="rounded pro">
-                        <span class="projectTitle">Shifterly</span> <br>
-                        <h6>Intra City Logistic Website</h6> <br>
-                        <div class="projectDesp">‘Shifterly’ is a reactive and responsive website built using Angular .It is connected to firebase for database and Authentication service. Hosted 
-                            this website in firebase. A website which allows the user to create a account and login. The user can book trucks according to their requirement and select the pickup and drop location for the goods and get an estimate price for the service.
-                            <br>
-                            <hr>
-                            <a href="https://shifterly-7cb53.firebaseapp.com/" target="_blank">Visit our website <i class="fas fa-external-link-alt"></i></a>
-                            <br>
-                            <hr>
-                            <a href="https://github.com/winston-dsouza/Shifterly" target="_blank">View on GitHub <i class="fab fa-github"></i> [ Client ]</a> <hr>
-                            <a href="https://github.com/sushansapaliga/shifterly" target="_blank">View on GitHub <i class="fab fa-github"></i> [ Admin ]</a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="rounded pro">
-                        <span class="projectTitle">Flight Trajectory Simulator</span> <br>
-                        <h6>Show the trajectory of a flight in realtime</h6> <br>
-                        <div class="projectDesp">
-                            In this project, a graphics software system called The OpenGL is used. OpenGL (Open Graphics Library). The project “Flight Trajectory Simulator” shows trajectory path from the initial airport to the selected destination airport of the plane. This project needs user interaction to navigate across the pages and select the airports and make it fly. There is an error handling property telling the user that they havn't selected any airport. The user can modify the plane according there needs ie its color, its speed and many more.
-                            <hr>
-                            <a href="https://github.com/sushansapaliga/Flight_Tragectory_Simulator" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-none">
-                    <div class="rounded pro">
-                        <span class="projectTitle">Tiara 2k20</span> <br>
-                        <h6>Registration app for Tiara 2k20</h6> <br>
-                        <div class="projectDesp">
-                            A web based mobile application which allows the student to register for National Level Tech Fest Tiara. The students can create a profile of themself and register for any event which they wish to participate using a unique 9-digit alphabet called SID [Student Identification number]. They can even team up with other students of same college. The registrations can only be done through mobile app which is avaliable on playstore.
-                            <hr>
-                            <a href="https://play.google.com/store/apps/details?id=com.tiara.tiara2k20" target="_blank">Download the App <i class="fas fa-external-link-alt"></i></a>
-                            <hr>
-                            <a href="https://github.com/sushansapaliga/tiara2020" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-none">
-                    <div class="rounded pro">
-                        <span class="projectTitle">Eye-In-The-Sky</span> <br>
-                        <h6>Drone controller</h6><br>
-                        <div class="projectDesp">
-                            An application built using python3 which can control the drone. The speciality of this controller is it can recognise the gesture made by the user and perform those action assigned for that particular gesture. There are few more cool stuff that can be made using this controller.
-                            <hr>
-                            <a href="#" target="_blank">View on GitHub <i class="fab fa-github"></i></a><br>[ Still under development ]
-                        </div>
-                    </div>
-                </div>
+    <!-- Navigation Bar Mobile Ends -->
+    
+    <!-- Home -->
+    <section style="height: 50%;" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Sushan Sapaliga, <br/> a Software Development Engineer (SDE), and <br/> a Web Developer.</h1>
+        <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    </section>
+    <!-- Home Ends -->
+    
+    <!-- About Me -->
+    <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h3 style="padding-top: 100px;" class="uk-margin-xlarge-left uk-light">About Me</h3>
+        <p class="uk-margin-xlarge-left uk-margin-xlarge-right">
+            Skilled at building and managing back-end services and I am willing to work and gain more experience on those applications. I am a fast-learner, can quickly adapt to the requirement and a great team-player. I am also willing to learn new technologies and build my career. I am also a good problem solver and have good grip over Data Structure and Algorithms. 
+        </p>
+        <a target="_blank" href="https://github.com/sushansapaliga" class="uk-margin-xlarge-left uk-button-text uk-light" uk-icon="github"></a> &nbsp;
+        <a target="_blank" href="https://www.linkedin.com/in/sushansapaliga/" class="uk-light uk-button-text" uk-icon="linkedin"></a> &nbsp;
+        <a target="_blank" href="mailto:sushansapaliga@gmail.com" class="uk-light uk-button-text" uk-icon="google"></a> &nbsp;
+        <a target="_blank" href="https://stackoverflow.com/users/11406735/sushan-sapaliga" class="uk-light uk-button-text"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a> &nbsp;
+        <a target="_blank" href="https://leetcode.com/u/sushansapaliga/" class="uk-light uk-button-text"><i class="fa fa-code" aria-hidden="true"></i></a> &nbsp;
+    </section>
+    <!-- About Me Ends -->
+    
+    <!-- Projects Section -->
+    <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h3 style="padding-top: 100px;" class="uk-margin-xlarge-left uk-light">Projects</h3>
+        <p class="uk-margin-xlarge-left">Projects that i've been working on</p>
+        <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Self Hosting</h4>
+                <p>Self-hosting setup includes a Cloudflare Zero Trust Tunnel for secure access to local network, Tailscale for VPN connectivity, and Docker to efficiently serve websites.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://portfolio.nextruntime.in/">
+                    <span uk-icon="icon: link"></span> 
+                    Website Link
+                </a> &nbsp;
             </div>
-            <br>
-            <div class="text-center">
-                <button class="btn btn-outline-light" id="seemore">See more <i class="fas fa-chevron-down"></i></button>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>The Taste</h4>
+                <p>
+                    A Online portal for users to directly order dishes from the restaurant, The Taste. <br/>
+                    Website: thetaste.in <br/>
+                    Restaurant portal: restaurant.thetaste.in <br/>
+                    <br/>
+                    Built using ReactJS as PWA and monolithic back-end application with Java Spring. We are using MongoDB as our Primary Database. For payment we are using Paytm Payment Gateway, to get customers current location and area name, we are using Google Maps API and for authentication we are using Firebase Authentication. The applications are hosted on Firebase Hosting and AWS Elastic Beanstalk.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="#">
+                    <span uk-icon="icon: link"></span> 
+                    Website is discontinued
+                </a>
             </div>
-
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Eye-In-The-Sky</h4>
+                <p>
+                    An application built using python3 which can control the drone. The speciality of this controller is it can recognise the gesture made by the user and perform those action assigned for that particular gesture. There are few more cool stuff that can be made using this controller.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sushansapaliga/Eye-In-The-Sky" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    GitHub
+                </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Tiara 2k20</h4>
+                <p>
+                    A web based mobile application which allows the student to register for National Level Tech Fest Tiara. The students can create a profile of themself and register for any event which they wish to participate using a unique 9-digit alphabet called SID [Student Identification number]. They can even team up with other students of same college. The registrations can only be done through mobile app which is avaliable on playstore.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="#">
+                    <span uk-icon="icon: link"></span> 
+                    Playstore [Delisted]
+                </a> &nbsp;
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sushansapaliga/tiara2020" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    GitHub
+                </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Flight Trajectory Simulator</h4>
+                <p>
+                    In this project, a graphics software system called The OpenGL is used. OpenGL (Open Graphics Library). The project “Flight Trajectory Simulator” shows trajectory path from the initial airport to the selected destination airport of the plane. This project needs user interaction to navigate across the pages and select the airports and make it fly. There is an error handling property telling the user that they havn't selected any airport. The user can modify the plane according there needs ie its color, its speed and many more.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sushansapaliga/Flight_Tragectory_Simulator" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    GitHub
+                </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Shifterly</h4>
+                <p>
+                    'Shifterly' is a reactive and responsive website built using Angular. It is connected to firebase for database and Authentication service. Hosted this website in firebase. A website which allows the user to create a account and login. The user can book trucks according to their requirement and select the pickup and drop location for the goods and get an estimate price for the service.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://shifterly-7cb53.firebaseapp.com/" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    Website
+                </a> &nbsp;
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/winston-dsouza/Shifterly" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    GitHub [Client]
+                </a> &nbsp;
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/sushansapaliga/shifterly" target="_blank">
+                    <span uk-icon="icon: github"></span> 
+                    GitHub [Admin]
+                </a> &nbsp;
+            </div>
         </div>
-    </div>
-    <!-- contact me -->
-    <div class="section3" >
-        <div class="container">
-            <div class="projectHead"> Contact Me </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="rounded footer">
-                        <a class="footerLink" href="mailto:sushansapaliga@gmail.com"><div><i class="fas fa-envelope"></i> sushansapaliga@gmail.com </div></a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="rounded footer">
-                        <a class="footerLink" href="tel:+918329950964"><div> <i class="fas fa-mobile"></i> 8329950964 </div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <br>
+    </section>
+    <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <!-- Projects Section Ends -->
 </body>
-
-<script src="itsME/js/main.js"></script>
-<script src="itsME/js/seemore.js"></script>
-
 </html>

@@ -1,0 +1,12 @@
+{
+  "name": "sushansapaliga.github.io",
+  "private": true,
+  "scripts": {
+    "start": "http-server . -a localhost -p 3000 -c-1 --cors",
+    "build": "",
+    "build:controller": ""
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,25 @@
+# Stage 1: Build the Go binary
+FROM golang:1.22.8 AS builder
+
+WORKDIR /app
+
+# Copy Go source code
+COPY . .
+
+# Build the Go binary statically linked
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server cmd/main.go
+
+# Stage 2: Create a minimal runtime image
+FROM alpine:latest
+
+WORKDIR /app
+
+# Copy the compiled binary from the builder stage
+COPY --from=builder /app/server /app/server
+COPY --from=builder /app/static/ /app/static/
+
+# Ensure it's executable
+RUN chmod +x /app/server
+
+# Run the binary
+CMD ["/app/server"]
